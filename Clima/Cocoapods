@@ -1,0 +1,83 @@
+###########################################################
+###########################################################
+###########################################################
+/* Installation. */
+- sudo gem install cocoapods
+
+- pod setup --verbose
+
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+/* To update cocoapods. */
+- To update use: `sudo gem install cocoapods --pre`
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+/* Set-up external pods. */
+
+- Go to the project directory where if you type the command "ls", it will list:
+    - d - {ProjectName} ex. Clima
+    - f - {ProjectName.xcodeproj} ex Clima.xcodeproj
+    - f - README.md
+
+
+- pod init
+
+    * After this command, a new file called "Podfile" will have been created.
+
+
+- open -a Xcode Podfile
+
+
+- Uncomment (remove the "#" symbol) on this line: #platform :ios, '9.0'
+    - Ex. platform :ios, '9.0'
+- Add the pods you wan to include.
+    Ex: pod 'Alamofire'.
+- Save the file.
+
+
+- pod install
+
+
+
+
+
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+/* After successful installation of your pods. */
+
+- Close xcode project.
+
+- Instead of opening the project using ProjectName.xcodeproj, open the
+  newly created file ProjectName.xcworkspace.
+
+- Then, if xcode is complaining about your pod imports, just rebuild the project.
+
+
+
+
+
+
+
+
+
+
+###########################################################
+###########################################################
+###########################################################
+/* Extra Commands. */
+- pod --version
